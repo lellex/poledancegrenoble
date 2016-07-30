@@ -1,0 +1,85 @@
+/**
+ * Custom variables
+ * ----------------------------------------------------------------------------
+ */
+
+
+$include-html-classes: true;
+$include-html-global-classes: $include-html-classes;
+
+
+$small-range: (0em, 40em);
+$screen: "only screen";
+$small-up: "#{$screen} and (min-width: 30em})";
+
+$small: $small-up;
+
+$row-width: rem-calc(740);
+$column-gutter: rem-calc(40);
+
+
+$body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+$header-font-color: $primary-color;
+$h1-font-size: rem-calc(45);
+$h2-font-size: rem-calc(45);
+$h3-font-size: rem-calc(14);
+$h4-font-size: rem-calc(12);
+$h5-font-size: rem-calc(12);
+
+$h1-font-reduction: rem-calc(10);
+$h2-font-reduction: rem-calc(10);
+$h3-font-reduction: rem-calc(2);
+$h4-font-reduction: rem-calc(1);
+
+$paragraph-font-size: 0.8rem;
+$paragraph-line-height: 1.5;
+
+$button-sml: rem-calc(6);
+$button-med: rem-calc(10);
+$button-font-color: $primary-color;
+$button-font-color-alt: $primary-color;
+$button-font-sml: rem-calc(12);
+$button-font-med: rem-calc(12);
+$button-bg-color: $beige;
+$input-border-color: $beige;
+$input-focus-border-color: $beige;
+$fieldset-border-width: 0px;
+
+$orbit-timer-show-progress-bar: true;
+$orbit-bullet-nav-color: #e3e3e3;
+$orbit-bullet-nav-color-active: #dabac1;
+
+@mixin background-img($file, $type, $width, $height) {
+	background-image: url('#{$file}.#{$type}');
+
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	  & {
+	    background-image: url('#{$file}');
+	    background-size: $width $height;
+	  }
+	}
+}
+
+@mixin radial-gradient($innerColor, $outerColor) {
+	background: $innerColor; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  $innerColor 0%, $outerColor 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$innerColor), color-stop(100%,$outerColor)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  $innerColor 0%,$outerColor 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  $innerColor 0%,$outerColor 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  $innerColor 0%,$outerColor 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  $innerColor 0%,$outerColor 100%); /* W3C */
+}
+
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+

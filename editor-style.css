@@ -1,0 +1,76 @@
+body {
+	font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td {
+	text-align: center;
+	border: solid 1px #6f6f6f;
+}
+
+th {
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+.horaire {
+	color: #ed1a5d;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.cours {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.niveau {
+	font-size: 11px;
+}
+
+h3 {
+	font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: #e2004e;
+	text-rendering: optimizeLegibility;
+	margin-top: 0.2rem;
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+	border-bottom: solid 1px #e2004e;
+}
+
+h3:before {
+	content: '> ';
+}
+
+button, .button {
+	border-style: solid;
+	border-width: 0px;
+	cursor: pointer;
+	font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0 0 1.25rem;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	display: inline-block;
+	padding-top: 0.625rem;
+	padding-right: 1.25rem;
+	padding-bottom: 0.6875rem;
+	padding-left: 1.25rem;
+	font-size: 0.75rem;
+	background-color: white;
+	border-color: #cccccc;
+	color: #e2004e;
+	transition: background-color 300ms ease-out;
+}
