@@ -94,5 +94,17 @@ function edit_admin_menus() {
 }
 add_action( 'admin_menu', 'edit_admin_menus' );
 
+function custom_post_page_columns($defaults) {
+	unset($defaults['author']);		// Auteur
+	unset($defaults['comments']);		// Commentaires
+	unset($defaults['tags']);		// Date
+	unset($defaults['seotitle']);		// Date
+	unset($defaults['seodesc']);		// Date
+	unset($defaults['seokeywords']);		// Date
+	return $defaults;
+}
+add_filter('manage_posts_columns', 'custom_post_page_columns');
+add_filter('manage_pages_columns', 'custom_post_page_columns');
+add_filter('manage_media_columns', 'custom_post_page_columns');
 
 ?>
