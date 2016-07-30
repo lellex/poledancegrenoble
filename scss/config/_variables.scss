@@ -41,8 +41,8 @@ $button-font-color: $primary-color;
 $button-font-color-alt: $primary-color;
 $button-font-sml: rem-calc(12);
 $button-font-med: rem-calc(12);
-$button-bg-color: $beige;
-$input-border-color: $beige;
+$button-bg-color: $secondary-color;
+$input-border-color: $secondary-color;
 $input-focus-border-color: $beige;
 $fieldset-border-width: 0px;
 
@@ -81,5 +81,3 @@ $orbit-bullet-nav-color-active: #dabac1;
   background-image:         linear-gradient(top, $fromColor, $toColor);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
-
-

@@ -112,6 +112,14 @@ get_header(); ?>
 				?>
 			</div>
 		</article>
+		<article class="col-12 plannings">
+			<?php query_posts( 'category_name=plannings&orderby=date&order=ASC' );
+				if ( have_posts() ) : while ( have_posts() ) : the_post();
+					the_content();
+				endwhile;
+				endif;
+			?>
+		</article>
 	</div>
 </section>
 

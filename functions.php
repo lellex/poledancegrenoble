@@ -89,7 +89,7 @@ function edit_admin_menus() {
     global $menu;
 
     remove_menu_page('edit-comments.php');
-    add_menu_page( 'Page principale', 'Page principale', 'manage_options', 'edit.php?category_name=ecole,cours,tarifs,event', '', 'dashicons-admin-home', 90 );
+    add_menu_page( 'Page principale', 'Page principale', 'manage_options', 'edit.php?category_name=ecole,cours,tarifs,events,plannings', '', 'dashicons-admin-home', 90 );
     add_menu_page( 'Portfolio', 'Portfolio', 'manage_options', 'edit.php?category_name=portfolio', '', 'dashicons-format-gallery', 90 );
 }
 add_action( 'admin_menu', 'edit_admin_menus' );
