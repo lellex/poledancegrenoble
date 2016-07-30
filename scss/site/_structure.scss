@@ -909,6 +909,10 @@ ul#menu-main-menu {
 		margin-bottom: 30px;
 	}
 
+	h4 {
+		margin-bottom: 16px;
+	}
+
 	dl {
 		@include grid-column(6);
 		@media #{$small-up} {
