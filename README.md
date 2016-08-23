@@ -22,3 +22,10 @@ Le site utilise ftp pour le déploiement. Pour l'utiliser avec git et [git-ftp](
 ```
 git ftp push --remote-root public_html/wp-content/themes/PoleDanceGrenoble
 ```
+
+
+## Problèmes connus
+
+- Il se peut qu'une erreur apparaisse lors de la première compilation du scss : `Warning: bower_components/foundation/scss/foundation/functions:13: error: error reading values after )`  
+La solution ici :
+http://foundation.zurb.com/forum/posts/19063-grunt---error-error-reading-values-after----libsass
