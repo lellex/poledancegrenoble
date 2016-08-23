@@ -173,10 +173,14 @@ get_header(); ?>
 	            <input type="submit" value="Envoyer" class="button" />
 
 	            <address>Pole Dance Grenoble<br/>
-	            	7 rue des arts et métiers - 38000 GRENOBLE<br/>
-	            	14 A Rue Mayencin à GIÈRES/SAINT MARTIN D'HÈRES<br/>
-	            	<a href="mailto:poledancegrenoble@hotmail.fr">poledancegrenoble@hotmail.fr</a>
-	        	</address>
+		            	7 rue des arts et métiers - 38000 GRENOBLE<br/>
+		            	14 A Rue Mayencin à GIÈRES/SAINT MARTIN D'HÈRES<br/>
+		            	<a href="mailto:poledancegrenoble@hotmail.fr">poledancegrenoble@hotmail.fr</a>
+		        	</address>
+							<p class="telephone">
+								Téléphone : 06 35 22 86 36 <br/>
+								(Du Lundi au Vendredi de 9h à 13h)
+							</p>
 	            <div id="confirm-message"><p></p><span class="close">x</span></div>
 	        </form>
 		</article>
