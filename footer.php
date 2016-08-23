@@ -1,9 +1,16 @@
+<div id="mentions">
+	<div class="row">
+		<p>
+			Design par <a href="http://pierrealicepierre.com/" title="Site d'Alice Pierre">Alice Pierre</a> - Développement Wordpress par <a href="http://lellex.fr/">Alexandra JANIN</a>
+		</p>
+	</div>
+</div>
 
 <?php wp_footer(); ?>
 
 <script src="<?php echo get_stylesheet_directory_uri() ; ?>/js/jquery/dist/jquery.min.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri() ; ?>/js/pdg.min.js"></script>
-<?php wp_reset_query(); 
+<?php wp_reset_query();
 if( is_home() || is_front_page() ) :?>
 	<script src="<?php echo get_stylesheet_directory_uri() ; ?>/js/pdg-home.min.js"></script>
 <?php endif; ?>
