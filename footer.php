@@ -1,7 +1,7 @@
 <div id="mentions">
 	<div class="row">
 		<p>
-			Design par <a href="http://pierrealicepierre.com/" title="Site d'Alice Pierre">Alice Pierre</a> - Développement Wordpress par <a href="http://lellex.fr/">Alexandra JANIN</a>
+			Design par <a href="http://pierrealicepierre.com/" title="Site d'Alice Pierre" target="_blank">Alice Pierre</a> - Développement Wordpress par <a href="http://lellex.fr/" title="Site d'Alexandra JANIN" target="_blank">Alexandra JANIN</a>
 		</p>
 	</div>
 </div>
